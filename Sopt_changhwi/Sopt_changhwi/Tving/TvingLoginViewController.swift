@@ -17,10 +17,13 @@ class TvingLoginViewController : UIViewController {
     //MARK: - LIFECYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
+        style()
     }
 }
 
 //MARK: - EXTENSION
 extension TvingLoginViewController {
-    
+    func style() {
+        view.backgroundColor = .white
+    }
 }
