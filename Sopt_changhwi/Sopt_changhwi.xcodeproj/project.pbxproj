@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
+		A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */; };
+		A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */; };
+		A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904A29E141B0009FD0B2 /* SnapKit */; };
+		A56D904E29E1422B009FD0B2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904D29E1422B009FD0B2 /* Then */; };
+		A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */; };
+		A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */; };
+		A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */; };
 		A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */; };
 		A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */; };
 		A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CBC29D7FAB500E45FC8 /* ViewController.swift */; };
@@ -42,6 +49,11 @@
 /* Begin PBXFileReference section */
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
+		A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarViewController.swift; sourceTree = "<group>"; };
+		A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarSecondViewController.swift; sourceTree = "<group>"; };
+		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
+		A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureSecondViewController.swift; sourceTree = "<group>"; };
+		A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
 		A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopt_changhwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */,
+				A56D904E29E1422B009FD0B2 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +109,32 @@
 			path = FirstSeminar;
 			sourceTree = "<group>";
 		};
+		A5642FA929E7D08800C93F9C /* Tving */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tving;
+			sourceTree = "<group>";
+		};
+		A5642FAA29E7D11900C93F9C /* TvingRx */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TvingRx;
+			sourceTree = "<group>";
+		};
+		A56D904429E1333D009FD0B2 /* SecondSemianr */ = {
+			isa = PBXGroup;
+			children = (
+				A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */,
+				A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */,
+				A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */,
+				A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */,
+				A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */,
+			);
+			path = SecondSemianr;
+			sourceTree = "<group>";
+		};
 		A5A10CAC29D7FAB500E45FC8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +159,9 @@
 		A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */ = {
 			isa = PBXGroup;
 			children = (
+				A5642FAA29E7D11900C93F9C /* TvingRx */,
+				A5642FA929E7D08800C93F9C /* Tving */,
+				A56D904429E1333D009FD0B2 /* SecondSemianr */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
 				A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */,
 				A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */,
@@ -163,6 +206,10 @@
 			dependencies = (
 			);
 			name = Sopt_changhwi;
+			packageProductDependencies = (
+				A56D904A29E141B0009FD0B2 /* SnapKit */,
+				A56D904D29E1422B009FD0B2 /* Then */,
+			);
 			productName = Sopt_changhwi;
 			productReference = A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +282,10 @@
 				Base,
 			);
 			mainGroup = A5A10CAC29D7FAB500E45FC8;
+			packageReferences = (
+				A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = A5A10CB629D7FAB500E45FC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,8 +331,13 @@
 			files = (
 				A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */,
 				A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */,
+				A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */,
 				A5FD46A029DF0ABC003AC96E /* TranslatesAutoresizeingPracticeVC.swift in Sources */,
+				A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */,
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
+				A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */,
+				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,
+				A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
 				A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */,
 				A5FD469C29DE9806003AC96E /* AccessControl.swift in Sources */,
@@ -616,6 +672,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A56D904A29E141B0009FD0B2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A56D904D29E1422B009FD0B2 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5A10CAD29D7FAB500E45FC8 /* Project object */;
 }
