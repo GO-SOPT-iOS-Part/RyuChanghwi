@@ -22,6 +22,7 @@
 		A5642FC229E7DD0700C93F9C /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FC129E7DD0700C93F9C /* Pretendard-SemiBold.ttf */; };
 		A5642FC429E7DD0E00C93F9C /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FC329E7DD0E00C93F9C /* Pretendard-Thin.ttf */; };
 		A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */; };
+		A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC729E9D50E00C93F9C /* UIButton.swift */; };
 		A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */; };
 		A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */; };
 		A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904A29E141B0009FD0B2 /* SnapKit */; };
@@ -75,6 +76,7 @@
 		A5642FC129E7DD0700C93F9C /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
 		A5642FC329E7DD0E00C93F9C /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
 		A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingHomeViewController.swift; sourceTree = "<group>"; };
+		A5642FC729E9D50E00C93F9C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarViewController.swift; sourceTree = "<group>"; };
 		A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				A5642FAE29E7D76600C93F9C /* UIColor.swift */,
 				A5642FB129E7DA9100C93F9C /* UIFont.swift */,
+				A5642FC729E9D50E00C93F9C /* UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
 				A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */,
 				A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */,
 				A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */,

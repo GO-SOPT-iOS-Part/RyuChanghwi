@@ -36,15 +36,46 @@ class TvingLoginViewController : UIViewController {
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.color2E2E2E.cgColor
     }
-    private let findIdButton = UIButton()
+    private let findIdButton = UIButton().then {
+        $0.setTitle("아이디 찾기", for: .normal)
+        $0.setTitleColor(UIColor.color9C9C9C, for: .normal)
+        $0.titleLabel?.font = UIFont.pretendard(.semiBold, size: 14)
+    }
     
-    private let separateView = UIView()
+    private let separateView = UIView().then {
+        $0.backgroundColor = UIColor.color2E2E2E
+    }
     
-    private let findPasswordButton = UIButton()
+    private let findPasswordButton = UIButton().then {
+        $0.setTitle("비밀번호 찾기", for: .normal)
+        $0.setTitleColor(UIColor.color9C9C9C, for: .normal)
+        $0.titleLabel?.font = UIFont.pretendard(.semiBold, size: 14)
+    }
     
-    private let createAccoundLabel = UILabel()
+    private let findStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.alignment = .fill
+        $0.distribution = .fill
+        $0.spacing = 36
+    }
     
-    private let createAccountBUtton = UIButton()
+    private let createAccoundLabel = UILabel().then {
+        $0.text = "아직 계정이 없으신가요?"
+        $0.textColor = UIColor.color626262
+        $0.font = UIFont.pretendard(.semiBold, size: 14)
+    }
+    
+    private let createAccountButton = UIButton().then {
+        $0.setTitle("닉네임 만들러가기", for: .normal)
+        $0.setTitleColor(UIColor.color9C9C9C, for: .normal)
+        $0.titleLabel?.font = UIFont.pretendard(.regular, size: 14)
+    }
+    private let accountStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.alignment = .fill
+        $0.distribution = .fill
+        $0.spacing = 17
+    }
     
     //MARK: - LIFECYCLE
     override func viewDidLoad() {
@@ -60,8 +91,14 @@ private extension TvingLoginViewController {
         view.backgroundColor = UIColor.color000000
     }
     func setLayout() {
-        [tvingLoginLabel, idTextField, passwordTextField, loginButton].forEach {
+        [tvingLoginLabel, idTextField, passwordTextField, loginButton, findStackView, accountStackView].forEach {
             view.addSubview($0)
+        }
+        [findIdButton, separateView, findPasswordButton].forEach {
+            findStackView.addArrangedSubview($0)
+        }
+        [createAccoundLabel, createAccountButton].forEach {
+            accountStackView.addArrangedSubview($0)
         }
         tvingLoginLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
@@ -84,6 +121,26 @@ private extension TvingLoginViewController {
             $0.top.equalTo(passwordTextField.snp.bottom).offset(21)
             $0.leading.equalToSuperview().offset(20)
             $0.height.equalTo(52)
+        }
+        findStackView.snp.makeConstraints {
+            $0.top.equalTo(loginButton.snp.bottom).offset(31)
+            $0.centerX.equalToSuperview()
+        }
+        
+        separateView.snp.makeConstraints {
+            $0.width.equalTo(1)
+            $0.height.equalTo(12)
+        }
+        accountStackView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(findStackView.snp.bottom).offset(28)
+        }
+        createAccoundLabel.snp.makeConstraints {
+            $0.height.equalTo(22)
+        }
+        createAccountButton.snp.makeConstraints {
+            $0.width.equalTo(128)
+            $0.height.equalTo(22)
         }
     }
 }

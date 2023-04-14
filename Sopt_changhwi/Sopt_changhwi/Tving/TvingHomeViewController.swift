@@ -35,11 +35,17 @@ class TvingHomeViewController : UIViewController {
         super.viewDidLoad()
         style()
         setLayout()
+        actions()
         spaceLines(label: greetingLabel, lineHeight: 1.33)
     }
     
     // MARK: - ACTIONS
-    
+    private func actions() {
+        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+    }
+    @objc func backButtonTapped() {
+        dismiss(animated: true)
+    }
 
 }
 // MARK: - EXTENSIONs
