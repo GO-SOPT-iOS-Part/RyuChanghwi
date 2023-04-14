@@ -6,10 +6,20 @@
 //
 
 import UIKit
+import SnapKit
+import Then
 
 class TvingHomeViewController : UIViewController {
     // MARK: - PROPERTIES
+    private let tvingImageView = UIImageView().then {
+        $0.
+    }
     
+    private let userInfoLabel = UILabel()
+    
+    private let greetingLabel = UILabel()
+    
+    private let backButton = UIButton()
     
     // MARK: - LIFECYCLE
     override func viewDidLoad() {
