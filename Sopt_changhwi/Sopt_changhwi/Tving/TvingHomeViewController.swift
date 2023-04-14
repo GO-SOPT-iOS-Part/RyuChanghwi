@@ -17,7 +17,7 @@ class TvingHomeViewController : UIViewController {
     
     private let greetingLabel = UILabel().then {
         $0.numberOfLines = 2
-//        $0.text = "dddd \n 반가워요"
+        $0.text = "dddd \n 반가워요"
         $0.font = UIFont.pretendard(.bold, size: 23)
         $0.textColor = UIColor.colorD6D6D6
         $0.textAlignment = .center
@@ -36,8 +36,9 @@ class TvingHomeViewController : UIViewController {
         style()
         setLayout()
         actions()
-        spaceLines(label: greetingLabel, lineHeight: 1.33)
+        greetingLabel.setLineSpacing(lineHeightMultiple: 1.33)
     }
+
     
     // MARK: - ACTIONS
     private func actions() {

@@ -82,6 +82,7 @@ class TvingLoginViewController : UIViewController {
         super.viewDidLoad()
         style()
         setLayout()
+        createAccountButton.setUnderline()
     }
 }
 
