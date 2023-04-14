@@ -82,7 +82,16 @@ class TvingLoginViewController : UIViewController {
         super.viewDidLoad()
         style()
         setLayout()
+        actions()
         createAccountButton.setUnderline()
+    }
+    
+    //MARK: - ACTIONS
+    private func actions() {
+        loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    }
+    @objc func loginButtonTapped() {
+        
     }
 }
 
