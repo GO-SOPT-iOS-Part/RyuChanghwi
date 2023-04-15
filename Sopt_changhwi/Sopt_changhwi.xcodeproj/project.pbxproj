@@ -24,6 +24,7 @@
 		A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */; };
 		A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC729E9D50E00C93F9C /* UIButton.swift */; };
 		A5642FCA29E9D99A00C93F9C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC929E9D99A00C93F9C /* UILabel.swift */; };
+		A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FCB29EA5F7000C93F9C /* UITextField.swift */; };
 		A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */; };
 		A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */; };
 		A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904A29E141B0009FD0B2 /* SnapKit */; };
@@ -79,6 +80,7 @@
 		A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingHomeViewController.swift; sourceTree = "<group>"; };
 		A5642FC729E9D50E00C93F9C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A5642FC929E9D99A00C93F9C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		A5642FCB29EA5F7000C93F9C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarViewController.swift; sourceTree = "<group>"; };
 		A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				A5642FB129E7DA9100C93F9C /* UIFont.swift */,
 				A5642FC729E9D50E00C93F9C /* UIButton.swift */,
 				A5642FC929E9D99A00C93F9C /* UILabel.swift */,
+				A5642FCB29EA5F7000C93F9C /* UITextField.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */,
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
 				A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */,
+				A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */,
 				A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */,
 				A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */,
 				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,

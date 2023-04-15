@@ -25,6 +25,7 @@ class TvingLoginViewController : UIViewController {
     }
     private let passwordTextField = UITextField().then {
         $0.placeholder = "비밀번호"
+        $0.font = UIFont.pretendard(.semiBold, size: 15)
         $0.backgroundColor = .color2E2E2E
     }
     private let loginButton = UIButton().then {
@@ -83,7 +84,13 @@ class TvingLoginViewController : UIViewController {
         style()
         setLayout()
         actions()
+        extensions()
+    }
+    
+    private func extensions() {
         createAccountButton.setUnderline()
+        idTextField.setPlaceholderColor(UIColor.color9C9C9C)
+        passwordTextField.setPlaceholderColor(UIColor.color9C9C9C)
     }
     
     //MARK: - ACTIONS
@@ -91,7 +98,10 @@ class TvingLoginViewController : UIViewController {
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
     }
     @objc func loginButtonTapped() {
-        
+        let tvingHomeViewController = TvingHomeViewController()
+        tvingHomeViewController.modalTransitionStyle = .crossDissolve
+        tvingHomeViewController.modalPresentationStyle = .fullScreen
+        present(tvingHomeViewController, animated: true)
     }
 }
 
