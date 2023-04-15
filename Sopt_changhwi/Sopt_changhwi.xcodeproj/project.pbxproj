@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
 		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingUserNameBottomSheetViewController.swift; sourceTree = "<group>"; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */,
 				A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */,
+				A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */,
 			);
 			path = Tving;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */,
 				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
 				A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */,
 				A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */,

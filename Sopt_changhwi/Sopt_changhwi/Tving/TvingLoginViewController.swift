@@ -11,6 +11,10 @@ import Then
 
 class TvingLoginViewController : UIViewController {
     //MARK: - PROPERTIES
+    private let backgroundView = UIView().then {
+        $0.backgroundColor = UIColor.color000000
+        $0.layer.opacity = 0.5
+    }
     private let tvingLoginLabel = UILabel().then {
         $0.text = "TVING ID 로그인"
         $0.font = UIFont.pretendard(.medium, size: 23)
@@ -116,11 +120,13 @@ class TvingLoginViewController : UIViewController {
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         passwordTextRemoveButton.addTarget(self, action: #selector(passwordTextRemoveButtonTapped), for: .touchUpInside)
         passwordTextSecureToggleButton.addTarget(self, action: #selector(passwordTextSecureToggleButtonTapped), for: .touchUpInside)
+        createAccountButton.addTarget(self, action: #selector(createAccountButtonTapped), for: .touchUpInside)
     }
     @objc func loginButtonTapped(_ sender : UITextField) {
         let tvingHomeViewController = TvingHomeViewController()
         tvingHomeViewController.modalTransitionStyle = .crossDissolve
         tvingHomeViewController.modalPresentationStyle = .fullScreen
+        tvingHomeViewController.userInfoText = idTextField.text ?? ""
         present(tvingHomeViewController, animated: true)
     }
     @objc func passwordTextRemoveButtonTapped() {
@@ -136,6 +142,17 @@ class TvingLoginViewController : UIViewController {
             passwordTextSecureToggleButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
             passwordTextField.isSecureTextEntry = true
         }
+    }
+    @objc func createAccountButtonTapped() {
+        let tvingUserNameBottomSheetViewController = TvingUserNameBottomSheetViewController()
+        tvingUserNameBottomSheetViewController.modalTransitionStyle = .coverVertical
+        tvingUserNameBottomSheetViewController.modalPresentationStyle = .overFullScreen
+        backgroundView.isHidden = false
+        tvingUserNameBottomSheetViewController.backgroundHiddenCompletionHandler = { [weak self] value in
+            guard let self else { return }
+            self.backgroundView.isHidden = value
+        }
+        present(tvingUserNameBottomSheetViewController, animated: true)
     }
 }
 
@@ -169,9 +186,10 @@ private extension TvingLoginViewController {
     
     func style() {
         view.backgroundColor = UIColor.color000000
+        backgroundView.isHidden = true
     }
     func setLayout() {
-        [tvingLoginLabel, idTextField, passwordTextField, loginButton, findStackView, accountStackView, passwordTextRemoveButton, passwordTextSecureToggleButton].forEach {
+        [tvingLoginLabel, idTextField, passwordTextField, loginButton, findStackView, accountStackView, passwordTextRemoveButton, passwordTextSecureToggleButton, backgroundView].forEach {
             view.addSubview($0)
         }
         [findIdButton, separateView, findPasswordButton].forEach {
@@ -179,6 +197,9 @@ private extension TvingLoginViewController {
         }
         [createAccoundLabel, createAccountButton].forEach {
             accountStackView.addArrangedSubview($0)
+        }
+        backgroundView.snp.makeConstraints {
+            $0.top.bottom.leading.trailing.equalToSuperview()
         }
         tvingLoginLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()

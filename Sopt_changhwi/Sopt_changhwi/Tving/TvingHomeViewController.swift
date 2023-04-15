@@ -10,6 +10,7 @@ import SnapKit
 import Then
 
 class TvingHomeViewController : UIViewController {
+    var userInfoText = ""
     // MARK: - PROPERTIES
     private let tvingImageView = UIImageView().then {
         $0.image = UIImage(named: "tvingImage")
@@ -17,7 +18,6 @@ class TvingHomeViewController : UIViewController {
     
     private let greetingLabel = UILabel().then {
         $0.numberOfLines = 2
-        $0.text = "dddd \n 반가워요"
         $0.font = UIFont.pretendard(.bold, size: 23)
         $0.textColor = UIColor.colorD6D6D6
         $0.textAlignment = .center
@@ -36,7 +36,13 @@ class TvingHomeViewController : UIViewController {
         style()
         setLayout()
         actions()
+        greetingLabel.text = "\(userInfoText) 님\n반가워요!"
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ///텍스트가 정해지기 전 설정을 하면 작동하지 않음 -> 생명주기에 차이를 주기
         greetingLabel.setLineSpacing(lineHeightMultiple: 1.33)
+        greetingLabel.textAlignment = .center
     }
 
     
