@@ -97,6 +97,20 @@ class TvingLoginViewController : UIViewController {
 
 //MARK: - EXTENSION
 private extension TvingLoginViewController {
+    ///이메일 정규식
+    func isValidEmail(email: String) -> Bool {
+        let emailRegex = #"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$"#
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
+    }
+    ///비밀번호 정규식
+    func isValidPassword(password: String) -> Bool {
+        let passwordRegex = #"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"#
+        let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
+        return passwordPredicate.evaluate(with: password)
+    }
+    
+    
     func style() {
         view.backgroundColor = UIColor.color000000
     }
