@@ -33,8 +33,10 @@ class TvingUserNameBottomSheetViewController : UIViewController {
     private let saveButton = UIButton().then {
         $0.layer.cornerRadius = 12
         $0.setTitle("저장하기", for: .normal)
-        $0.backgroundColor = UIColor.colorFF143C
+        $0.backgroundColor = UIColor.color000000
         $0.titleLabel?.font = UIFont.pretendard(.semiBold, size: 14)
+        $0.layer.borderColor = UIColor.color2E2E2E.cgColor
+        $0.setTitleColor(UIColor.color9C9C9C, for: .normal)
     }
     // MARK: - LIFECYCLE
     override func viewDidLoad() {
@@ -42,6 +44,7 @@ class TvingUserNameBottomSheetViewController : UIViewController {
         style()
         setLayout()
         actions()
+        nickNameTextField.delegate = self
     }
     
     // MARK: - ACTIONS
@@ -61,6 +64,12 @@ class TvingUserNameBottomSheetViewController : UIViewController {
 }
 // MARK: - EXTENSIONs
 extension TvingUserNameBottomSheetViewController {
+    func isKoreanOnly(text: String) -> Bool {
+        let koreanPattern = "^[ㄱ-ㅎㅏ-ㅣ가-힣]*$"
+        let koreanPredicate = NSPredicate(format: "SELF MATCHES %@", koreanPattern)
+        return koreanPredicate.evaluate(with: text)
+    }
+    
     func style() {
         view.backgroundColor = .clear
         
@@ -102,3 +111,31 @@ extension TvingUserNameBottomSheetViewController {
     }
 }
 
+extension TvingUserNameBottomSheetViewController : UITextFieldDelegate {
+    // 텍스트 필드 입력 제한 로직 구현
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = textField.text ?? ""
+        let updatedText = (currentText as NSString).replacingCharacters(in: range, with: string)
+                
+        // 입력된 문자열이 한글인지 검사
+        let koreanPattern = "^[ㄱ-ㅎㅏ-ㅣ가-힣]*$"
+        let koreanPredicate = NSPredicate(format: "SELF MATCHES %@", koreanPattern)
+        let isKorean = koreanPredicate.evaluate(with: updatedText)
+        if isKorean{
+            if updatedText.isEmpty {
+                saveButton.isEnabled = false
+                saveButton.backgroundColor = UIColor.color000000
+                saveButton.layer.borderColor = UIColor.color2E2E2E.cgColor
+                saveButton.setTitleColor(UIColor.color9C9C9C, for: .normal)
+            }
+            else {
+                saveButton.isEnabled = true
+                saveButton.backgroundColor = UIColor.colorFF143C
+                saveButton.layer.borderColor = UIColor.colorFF143C.cgColor
+                saveButton.setTitleColor(UIColor.colorFFFFFF, for: .normal)
+            }
+        }
+
+        return isKorean
+    }
+}
