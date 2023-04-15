@@ -9,6 +9,7 @@ import UIKit
 
 class TvingUserNameBottomSheetViewController : UIViewController {
     var backgroundHiddenCompletionHandler : ((Bool) -> (Void))?
+    var nickNameCompletionHandler : ((String) -> (Void))?
     
     // MARK: - PROPERTIES
     private let bottomSheetView = UIView().then {
@@ -46,10 +47,16 @@ class TvingUserNameBottomSheetViewController : UIViewController {
     // MARK: - ACTIONS
     private func actions() {
         closeBottomSheetButton.addTarget(self, action: #selector(closeBottomSheetButtonTapped), for: .touchUpInside)
+        saveButton.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
     }
     @objc func closeBottomSheetButtonTapped() {
         dismiss(animated: true)
         backgroundHiddenCompletionHandler?(true)
+    }
+    @objc func saveButtonTapped() {
+        dismiss(animated: true)
+        backgroundHiddenCompletionHandler?(true)
+        nickNameCompletionHandler?(nickNameTextField.text ?? "")
     }
 }
 // MARK: - EXTENSIONs

@@ -10,6 +10,7 @@ import SnapKit
 import Then
 
 class TvingLoginViewController : UIViewController {
+    var userName : String?
     //MARK: - PROPERTIES
     private let backgroundView = UIView().then {
         $0.backgroundColor = UIColor.color000000
@@ -126,7 +127,12 @@ class TvingLoginViewController : UIViewController {
         let tvingHomeViewController = TvingHomeViewController()
         tvingHomeViewController.modalTransitionStyle = .crossDissolve
         tvingHomeViewController.modalPresentationStyle = .fullScreen
-        tvingHomeViewController.userInfoText = idTextField.text ?? ""
+        if let userName = userName {
+            tvingHomeViewController.userInfoText = userName
+        }
+        else {
+            tvingHomeViewController.userInfoText = idTextField.text ?? ""
+        }
         present(tvingHomeViewController, animated: true)
     }
     @objc func passwordTextRemoveButtonTapped() {
@@ -151,6 +157,10 @@ class TvingLoginViewController : UIViewController {
         tvingUserNameBottomSheetViewController.backgroundHiddenCompletionHandler = { [weak self] value in
             guard let self else { return }
             self.backgroundView.isHidden = value
+        }
+        tvingUserNameBottomSheetViewController.nickNameCompletionHandler = { [weak self] value in
+            guard let self else { return }
+            self.userName = value
         }
         present(tvingUserNameBottomSheetViewController, animated: true)
     }
