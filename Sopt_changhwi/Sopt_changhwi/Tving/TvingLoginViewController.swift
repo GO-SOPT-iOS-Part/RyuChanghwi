@@ -27,6 +27,7 @@ class TvingLoginViewController : UIViewController {
     private let passwordTextField = UITextField().then {
         $0.placeholder = "비밀번호"
         $0.font = UIFont.pretendard(.semiBold, size: 15)
+        $0.isSecureTextEntry = true
         $0.textColor = UIColor.colorFFFFFF
         $0.backgroundColor = .color2E2E2E
     }
@@ -79,6 +80,15 @@ class TvingLoginViewController : UIViewController {
         $0.distribution = .fill
         $0.spacing = 17
     }
+    private let passwordTextRemoveButton = UIButton().then {
+        $0.setImage(UIImage(systemName: "xmark.circle"), for: .normal)
+        $0.tintColor = .color626262
+    }
+    
+    private let passwordTextSecureToggleButton = UIButton().then {
+        $0.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        $0.tintColor = .color626262
+    }
     
     //MARK: - LIFECYCLE
     override func viewDidLoad() {
@@ -87,28 +97,62 @@ class TvingLoginViewController : UIViewController {
         setLayout()
         actions()
         extensions()
+        idTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
     private func extensions() {
         createAccountButton.setUnderline()
         idTextField.setPlaceholderColor(UIColor.color9C9C9C)
         passwordTextField.setPlaceholderColor(UIColor.color9C9C9C)
+        passwordTextField.addLeftPadding(leftPadding: 22)
+        idTextField.addLeftPadding(leftPadding: 22)
+        passwordTextField.addRightPadding(rightPadding: 86)
+        idTextField.addRightPadding(rightPadding: 22)
     }
     
     //MARK: - ACTIONS
     private func actions() {
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        passwordTextRemoveButton.addTarget(self, action: #selector(passwordTextRemoveButtonTapped), for: .touchUpInside)
+        passwordTextSecureToggleButton.addTarget(self, action: #selector(passwordTextSecureToggleButtonTapped), for: .touchUpInside)
     }
-    @objc func loginButtonTapped() {
+    @objc func loginButtonTapped(_ sender : UITextField) {
         let tvingHomeViewController = TvingHomeViewController()
         tvingHomeViewController.modalTransitionStyle = .crossDissolve
         tvingHomeViewController.modalPresentationStyle = .fullScreen
         present(tvingHomeViewController, animated: true)
     }
+    @objc func passwordTextRemoveButtonTapped() {
+        passwordTextField.text = ""
+    }
+    @objc func passwordTextSecureToggleButtonTapped(_ sender : UIButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            passwordTextSecureToggleButton.setImage(UIImage(systemName: "eye"), for: .normal)
+            passwordTextField.isSecureTextEntry = false
+        }
+        else {
+            passwordTextSecureToggleButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+            passwordTextField.isSecureTextEntry = true
+        }
+    }
 }
 
 //MARK: - EXTENSION
 private extension TvingLoginViewController {
+    func enabledLoginButton() {
+        loginButton.isEnabled = true
+        loginButton.backgroundColor = UIColor.colorFF143C
+        loginButton.layer.borderColor = UIColor.colorFF143C.cgColor
+        loginButton.setTitleColor(UIColor.colorFFFFFF, for: .normal)
+    }
+    func disenabledLoginButton() {
+        loginButton.isEnabled = false
+        loginButton.backgroundColor = UIColor.color000000
+        loginButton.layer.borderColor = UIColor.color2E2E2E.cgColor
+        loginButton.setTitleColor(UIColor.color9C9C9C, for: .normal)
+    }
     ///이메일 정규식
     func isValidEmail(email: String) -> Bool {
         let emailRegex = #"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$"#
@@ -117,7 +161,7 @@ private extension TvingLoginViewController {
     }
     ///비밀번호 정규식
     func isValidPassword(password: String) -> Bool {
-        let passwordRegex = #"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"#
+        let passwordRegex = "^(?=.*[A-Za-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=-]).{8,50}"
         let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
         return passwordPredicate.evaluate(with: password)
     }
@@ -127,7 +171,7 @@ private extension TvingLoginViewController {
         view.backgroundColor = UIColor.color000000
     }
     func setLayout() {
-        [tvingLoginLabel, idTextField, passwordTextField, loginButton, findStackView, accountStackView].forEach {
+        [tvingLoginLabel, idTextField, passwordTextField, loginButton, findStackView, accountStackView, passwordTextRemoveButton, passwordTextSecureToggleButton].forEach {
             view.addSubview($0)
         }
         [findIdButton, separateView, findPasswordButton].forEach {
@@ -178,5 +222,46 @@ private extension TvingLoginViewController {
             $0.width.equalTo(128)
             $0.height.equalTo(22)
         }
+        passwordTextSecureToggleButton.snp.makeConstraints {
+            $0.centerY.equalTo(passwordTextField)
+            $0.trailing.equalTo(passwordTextField.snp.trailing).offset(-20)
+            $0.width.equalTo(20)
+            $0.height.equalTo(52)
+        }
+        passwordTextRemoveButton.snp.makeConstraints {
+            $0.centerY.equalTo(passwordTextField)
+            $0.trailing.equalTo(passwordTextSecureToggleButton.snp.leading).offset(-16)
+            $0.width.equalTo(20)
+            $0.height.equalTo(52)
+        }
     }
+}
+extension TvingLoginViewController : UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = (textField.text ?? "") as NSString
+        let newText = currentText.replacingCharacters(in: range, with: string)
+        
+        if textField == idTextField {
+            let isValidEmail = isValidEmail(email: newText)
+            
+            if isValidEmail && isValidPassword(password: passwordTextField.text ?? "") {
+                enabledLoginButton()
+            }
+            else {
+                disenabledLoginButton()
+            }
+        }
+        else if textField == passwordTextField {
+            let isValidPassword = isValidPassword(password: newText)
+            
+            if isValidPassword && isValidEmail(email: idTextField.text ?? "") {
+                enabledLoginButton()
+            }
+            else {
+                disenabledLoginButton()
+            }
+        }
+        return true
+    }
+
 }

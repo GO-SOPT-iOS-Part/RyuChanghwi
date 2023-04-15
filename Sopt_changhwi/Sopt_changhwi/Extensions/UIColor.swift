@@ -10,7 +10,7 @@ import UIKit
 extension UIColor {
     static let colorFFFFFF = UIColor(hex: 0xFFFFFF)
     static let color000000 = UIColor(hex: 0x000000)
-    static let colorFF133C = UIColor(hex: 0xFF143C)
+    static let colorFF143C = UIColor(hex: 0xFF143C)
     static let color2E2E2E = UIColor(hex: 0x2E2E2E)
     static let color626262 = UIColor(hex: 0x626262)
     static let color9C9C9C = UIColor(hex: 0x9C9C9C)

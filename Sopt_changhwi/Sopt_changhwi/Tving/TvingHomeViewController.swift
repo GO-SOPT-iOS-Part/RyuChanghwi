@@ -27,7 +27,7 @@ class TvingHomeViewController : UIViewController {
         $0.setTitle("메인으로", for: .normal)
         $0.setTitleColor(UIColor.colorFFFFFF, for: .normal)
         $0.titleLabel?.font = UIFont.pretendard(.semiBold, size: 14)
-        $0.backgroundColor = UIColor.colorFF133C
+        $0.backgroundColor = UIColor.colorFF143C
     }
     
     // MARK: - LIFECYCLE
