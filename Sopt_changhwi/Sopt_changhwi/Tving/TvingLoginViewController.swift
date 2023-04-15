@@ -21,11 +21,13 @@ class TvingLoginViewController : UIViewController {
         $0.placeholder = "아이디"
         $0.font = UIFont.pretendard(.semiBold, size: 15)
         $0.backgroundColor = .color2E2E2E
+        $0.textColor = UIColor.colorFFFFFF
         $0.layer.cornerRadius = 3
     }
     private let passwordTextField = UITextField().then {
         $0.placeholder = "비밀번호"
         $0.font = UIFont.pretendard(.semiBold, size: 15)
+        $0.textColor = UIColor.colorFFFFFF
         $0.backgroundColor = .color2E2E2E
     }
     private let loginButton = UIButton().then {
