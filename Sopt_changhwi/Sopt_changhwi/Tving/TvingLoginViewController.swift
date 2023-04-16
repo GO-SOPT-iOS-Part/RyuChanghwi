@@ -10,6 +10,7 @@ import SnapKit
 import Then
 
 class TvingLoginViewController : UIViewController {
+    ///TvingUserNameViewController에서 받는 userName
     var userName : String?
     //MARK: - PROPERTIES
     private let backgroundView = UIView().then {
@@ -106,6 +107,7 @@ class TvingLoginViewController : UIViewController {
         passwordTextField.delegate = self
     }
     
+    ///extionsions으로 속성 수정
     private func extensions() {
         createAccountButton.setUnderline()
         idTextField.setPlaceholderColor(UIColor.color9C9C9C)
@@ -127,18 +129,22 @@ class TvingLoginViewController : UIViewController {
         let tvingHomeViewController = TvingHomeViewController()
         tvingHomeViewController.modalTransitionStyle = .crossDissolve
         tvingHomeViewController.modalPresentationStyle = .fullScreen
+        ///userName이 있다면 userName 넘겨주기
         if let userName = userName {
             tvingHomeViewController.userInfoText = userName
         }
+        ///없다면 id 넘겨주기
         else {
             tvingHomeViewController.userInfoText = idTextField.text ?? ""
         }
         present(tvingHomeViewController, animated: true)
     }
     @objc func passwordTextRemoveButtonTapped() {
+        ///비밀번호 값 초기화
         passwordTextField.text = ""
     }
     @objc func passwordTextSecureToggleButtonTapped(_ sender : UIButton) {
+        ///비밀번호 secure 토글
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
             passwordTextSecureToggleButton.setImage(UIImage(systemName: "eye"), for: .normal)
@@ -153,11 +159,14 @@ class TvingLoginViewController : UIViewController {
         let tvingUserNameBottomSheetViewController = TvingUserNameBottomSheetViewController()
         tvingUserNameBottomSheetViewController.modalTransitionStyle = .coverVertical
         tvingUserNameBottomSheetViewController.modalPresentationStyle = .overFullScreen
+        ///바텀시트의 backgroundView 보이기
         backgroundView.isHidden = false
+        ///tvingUserNameBottomsheetViewController dismiss  시 클로저로 background hidden
         tvingUserNameBottomSheetViewController.backgroundHiddenCompletionHandler = { [weak self] value in
             guard let self else { return }
             self.backgroundView.isHidden = value
         }
+        ///tvingUserNameBottomsheetViewController dismiss  시 클로저로 userName 받아오기
         tvingUserNameBottomSheetViewController.nickNameCompletionHandler = { [weak self] value in
             guard let self else { return }
             self.userName = value
@@ -272,23 +281,29 @@ extension TvingLoginViewController : UITextFieldDelegate {
         let currentText = (textField.text ?? "") as NSString
         let newText = currentText.replacingCharacters(in: range, with: string)
         
+        ///idTextField일 시
         if textField == idTextField {
             let isValidEmail = isValidEmail(email: newText)
-            
+            ///passwordTextField.text 값이 정규식인 상태에서 idValid일 시
             if isValidEmail && isValidPassword(password: passwordTextField.text ?? "") {
+                ///로그인 버튼 활성화
                 enabledLoginButton()
             }
             else {
+                ///로그인 버튼 비활성화
                 disenabledLoginButton()
             }
         }
+        ///passwordTextField일 시
         else if textField == passwordTextField {
             let isValidPassword = isValidPassword(password: newText)
-            
+            ///idTextField.text 값이 정규식인 상태에서 passwordValid일 시
             if isValidPassword && isValidEmail(email: idTextField.text ?? "") {
+                ///로그인 버튼 활성화
                 enabledLoginButton()
             }
             else {
+                ///로그인 버튼 비활성화 
                 disenabledLoginButton()
             }
         }

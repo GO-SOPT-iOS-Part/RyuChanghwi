@@ -153,13 +153,6 @@
 			path = Tving;
 			sourceTree = "<group>";
 		};
-		A5642FAA29E7D11900C93F9C /* TvingRx */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TvingRx;
-			sourceTree = "<group>";
-		};
 		A5642FAD29E7D70300C93F9C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +219,6 @@
 			children = (
 				A5642FB029E7DA5B00C93F9C /* Fonts */,
 				A5642FAD29E7D70300C93F9C /* Extensions */,
-				A5642FAA29E7D11900C93F9C /* TvingRx */,
 				A5642FA929E7D08800C93F9C /* Tving */,
 				A56D904429E1333D009FD0B2 /* SecondSemianr */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,

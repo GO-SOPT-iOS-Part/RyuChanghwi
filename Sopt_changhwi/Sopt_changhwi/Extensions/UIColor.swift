@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIColor {
+    ///Tving에 쓰일 색
     static let colorFFFFFF = UIColor(hex: 0xFFFFFF)
     static let color000000 = UIColor(hex: 0x000000)
     static let colorFF143C = UIColor(hex: 0xFF143C)

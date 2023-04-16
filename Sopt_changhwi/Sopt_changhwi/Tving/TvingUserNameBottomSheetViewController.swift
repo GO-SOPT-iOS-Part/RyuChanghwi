@@ -8,6 +8,7 @@
 import UIKit
 
 class TvingUserNameBottomSheetViewController : UIViewController {
+    ///dismiss시 넘겨줄 데이터 클로저
     var backgroundHiddenCompletionHandler : ((Bool) -> (Void))?
     var nickNameCompletionHandler : ((String) -> (Void))?
     
@@ -64,12 +65,6 @@ class TvingUserNameBottomSheetViewController : UIViewController {
 }
 // MARK: - EXTENSIONs
 extension TvingUserNameBottomSheetViewController {
-    func isKoreanOnly(text: String) -> Bool {
-        let koreanPattern = "^[ㄱ-ㅎㅏ-ㅣ가-힣]*$"
-        let koreanPredicate = NSPredicate(format: "SELF MATCHES %@", koreanPattern)
-        return koreanPredicate.evaluate(with: text)
-    }
-    
     func style() {
         view.backgroundColor = .clear
         
@@ -112,16 +107,21 @@ extension TvingUserNameBottomSheetViewController {
 }
 
 extension TvingUserNameBottomSheetViewController : UITextFieldDelegate {
-    // 텍스트 필드 입력 제한 로직 구현
+    /// 텍스트 필드 입력 제한 로직 구현
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = textField.text ?? ""
         let updatedText = (currentText as NSString).replacingCharacters(in: range, with: string)
                 
-        // 입력된 문자열이 한글인지 검사
+        /// 입력된 문자열이 한글인지 검사
         let koreanPattern = "^[ㄱ-ㅎㅏ-ㅣ가-힣]*$"
         let koreanPredicate = NSPredicate(format: "SELF MATCHES %@", koreanPattern)
         let isKorean = koreanPredicate.evaluate(with: updatedText)
-        if isKorean{
+        ///textField의 text가 한국어만 입력되고 있을 때
+        ///처음엔 단순히  if isKoean && updatedText.isEmpty 라고 조건문을 달았을 때
+        ///UI상에는 한국어만 입력되지만 자판에는 영어를 눌렀을 때 updatedText.isEmpty는 false로 바뀜
+        ///때문에 한국어만 들어오는 환경(조건문) 안에서 updatedText.isEmplty를 넣어줘 한국어가 입력되고 있는 상황 내에서 값의 유무를 알 수 있었음.
+        if isKorean {
+            ///text값이 없다면
             if updatedText.isEmpty {
                 saveButton.isEnabled = false
                 saveButton.backgroundColor = UIColor.color000000
@@ -129,13 +129,14 @@ extension TvingUserNameBottomSheetViewController : UITextFieldDelegate {
                 saveButton.setTitleColor(UIColor.color9C9C9C, for: .normal)
             }
             else {
+            ///text값이 있다면
                 saveButton.isEnabled = true
                 saveButton.backgroundColor = UIColor.colorFF143C
                 saveButton.layer.borderColor = UIColor.colorFF143C.cgColor
                 saveButton.setTitleColor(UIColor.colorFFFFFF, for: .normal)
             }
         }
-
+        ///isKoean으로 설정해, 한국어만 text에 입력되도록 만들어줌
         return isKorean
     }
 }

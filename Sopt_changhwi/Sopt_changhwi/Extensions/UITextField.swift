@@ -18,11 +18,13 @@ extension UITextField {
         ]
         self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: attributes)
     }
+    ///TextField 좌측 패딩
     func addRightPadding(rightPadding : CGFloat) {
       let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: rightPadding, height: self.frame.height))
       self.rightView = paddingView
       self.rightViewMode = ViewMode.always
     }
+    ///TextField 우측 패딩
     func addLeftPadding(leftPadding : CGFloat) {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: leftPadding, height: self.frame.height))
         self.leftView = paddingView

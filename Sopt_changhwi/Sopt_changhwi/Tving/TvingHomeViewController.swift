@@ -10,6 +10,7 @@ import SnapKit
 import Then
 
 class TvingHomeViewController : UIViewController {
+    ///UI에 표시될 userInfo 값
     var userInfoText = ""
     // MARK: - PROPERTIES
     private let tvingImageView = UIImageView().then {
@@ -41,7 +42,9 @@ class TvingHomeViewController : UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ///텍스트가 정해지기 전 설정을 하면 작동하지 않음 -> 생명주기에 차이를 주기
+        ///텍스트의 lineSpacing 설정
         greetingLabel.setLineSpacing(lineHeightMultiple: 1.33)
+        ///텍스트 가운데 정렬
         greetingLabel.textAlignment = .center
     }
 
@@ -57,15 +60,6 @@ class TvingHomeViewController : UIViewController {
 }
 // MARK: - EXTENSIONs
 extension TvingHomeViewController {
-    ///줄 간격 벌리기
-    func spaceLines(label : UILabel, lineHeight : Double) {
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = lineHeight
-        let stringValue = NSMutableAttributedString(string: label.text ?? "")
-        stringValue.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, stringValue.length))
-        label.attributedText = stringValue
-    }
-    
     func style() {
         view.backgroundColor = UIColor.color000000
     }

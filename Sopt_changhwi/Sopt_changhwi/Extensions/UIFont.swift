@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIFont {
+    ///Tving에 쓰일 폰트
     public enum PretendardType : String {
         case black = "Black"
         case bold = "Bold"
