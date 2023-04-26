@@ -7,8 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
+		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
+		A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAE29E7D76600C93F9C /* UIColor.swift */; };
+		A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FB129E7DA9100C93F9C /* UIFont.swift */; };
+		A5642FB429E7DCCB00C93F9C /* Pretendard-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FB329E7DCCB00C93F9C /* Pretendard-Black.ttf */; };
+		A5642FB629E7DCD300C93F9C /* Pretendard-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FB529E7DCD300C93F9C /* Pretendard-Bold.ttf */; };
+		A5642FB829E7DCDC00C93F9C /* Pretendard-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FB729E7DCDC00C93F9C /* Pretendard-ExtraBold.ttf */; };
+		A5642FBA29E7DCE600C93F9C /* Pretendard-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FB929E7DCE600C93F9C /* Pretendard-ExtraLight.ttf */; };
+		A5642FBC29E7DCF000C93F9C /* Pretendard-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FBB29E7DCF000C93F9C /* Pretendard-Light.ttf */; };
+		A5642FBE29E7DCF700C93F9C /* Pretendard-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FBD29E7DCF700C93F9C /* Pretendard-Medium.ttf */; };
+		A5642FC029E7DCFF00C93F9C /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FBF29E7DCFF00C93F9C /* Pretendard-Regular.ttf */; };
+		A5642FC229E7DD0700C93F9C /* Pretendard-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FC129E7DD0700C93F9C /* Pretendard-SemiBold.ttf */; };
+		A5642FC429E7DD0E00C93F9C /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5642FC329E7DD0E00C93F9C /* Pretendard-Thin.ttf */; };
+		A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */; };
+		A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC729E9D50E00C93F9C /* UIButton.swift */; };
+		A5642FCA29E9D99A00C93F9C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC929E9D99A00C93F9C /* UILabel.swift */; };
+		A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FCB29EA5F7000C93F9C /* UITextField.swift */; };
+		A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */; };
+		A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */; };
+		A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904A29E141B0009FD0B2 /* SnapKit */; };
+		A56D904E29E1422B009FD0B2 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904D29E1422B009FD0B2 /* Then */; };
+		A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */; };
+		A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */; };
+		A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */; };
 		A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */; };
 		A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */; };
 		A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CBC29D7FAB500E45FC8 /* ViewController.swift */; };
@@ -40,8 +64,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingUserNameBottomSheetViewController.swift; sourceTree = "<group>"; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
+		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
+		A5642FAE29E7D76600C93F9C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A5642FB129E7DA9100C93F9C /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		A5642FB329E7DCCB00C93F9C /* Pretendard-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.ttf"; sourceTree = "<group>"; };
+		A5642FB529E7DCD300C93F9C /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.ttf"; sourceTree = "<group>"; };
+		A5642FB729E7DCDC00C93F9C /* Pretendard-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A5642FB929E7DCE600C93F9C /* Pretendard-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.ttf"; sourceTree = "<group>"; };
+		A5642FBB29E7DCF000C93F9C /* Pretendard-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.ttf"; sourceTree = "<group>"; };
+		A5642FBD29E7DCF700C93F9C /* Pretendard-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.ttf"; sourceTree = "<group>"; };
+		A5642FBF29E7DCFF00C93F9C /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
+		A5642FC129E7DD0700C93F9C /* Pretendard-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.ttf"; sourceTree = "<group>"; };
+		A5642FC329E7DD0E00C93F9C /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
+		A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingHomeViewController.swift; sourceTree = "<group>"; };
+		A5642FC729E9D50E00C93F9C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		A5642FC929E9D99A00C93F9C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		A5642FCB29EA5F7000C93F9C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarViewController.swift; sourceTree = "<group>"; };
+		A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarSecondViewController.swift; sourceTree = "<group>"; };
+		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
+		A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureSecondViewController.swift; sourceTree = "<group>"; };
+		A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
 		A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopt_changhwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */,
+				A56D904E29E1422B009FD0B2 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +143,56 @@
 			path = FirstSeminar;
 			sourceTree = "<group>";
 		};
+		A5642FA929E7D08800C93F9C /* Tving */ = {
+			isa = PBXGroup;
+			children = (
+				A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */,
+				A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */,
+				A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */,
+			);
+			path = Tving;
+			sourceTree = "<group>";
+		};
+		A5642FAD29E7D70300C93F9C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5642FAE29E7D76600C93F9C /* UIColor.swift */,
+				A5642FB129E7DA9100C93F9C /* UIFont.swift */,
+				A5642FC729E9D50E00C93F9C /* UIButton.swift */,
+				A5642FC929E9D99A00C93F9C /* UILabel.swift */,
+				A5642FCB29EA5F7000C93F9C /* UITextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5642FB029E7DA5B00C93F9C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A5642FC129E7DD0700C93F9C /* Pretendard-SemiBold.ttf */,
+				A5642FC329E7DD0E00C93F9C /* Pretendard-Thin.ttf */,
+				A5642FBB29E7DCF000C93F9C /* Pretendard-Light.ttf */,
+				A5642FBF29E7DCFF00C93F9C /* Pretendard-Regular.ttf */,
+				A5642FBD29E7DCF700C93F9C /* Pretendard-Medium.ttf */,
+				A5642FB929E7DCE600C93F9C /* Pretendard-ExtraLight.ttf */,
+				A5642FB729E7DCDC00C93F9C /* Pretendard-ExtraBold.ttf */,
+				A5642FB529E7DCD300C93F9C /* Pretendard-Bold.ttf */,
+				A5642FB329E7DCCB00C93F9C /* Pretendard-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A56D904429E1333D009FD0B2 /* SecondSemianr */ = {
+			isa = PBXGroup;
+			children = (
+				A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */,
+				A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */,
+				A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */,
+				A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */,
+				A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */,
+			);
+			path = SecondSemianr;
+			sourceTree = "<group>";
+		};
 		A5A10CAC29D7FAB500E45FC8 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +217,10 @@
 		A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */ = {
 			isa = PBXGroup;
 			children = (
+				A5642FB029E7DA5B00C93F9C /* Fonts */,
+				A5642FAD29E7D70300C93F9C /* Extensions */,
+				A5642FA929E7D08800C93F9C /* Tving */,
+				A56D904429E1333D009FD0B2 /* SecondSemianr */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
 				A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */,
 				A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */,
@@ -163,6 +265,10 @@
 			dependencies = (
 			);
 			name = Sopt_changhwi;
+			packageProductDependencies = (
+				A56D904A29E141B0009FD0B2 /* SnapKit */,
+				A56D904D29E1422B009FD0B2 /* Then */,
+			);
 			productName = Sopt_changhwi;
 			productReference = A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +341,10 @@
 				Base,
 			);
 			mainGroup = A5A10CAC29D7FAB500E45FC8;
+			packageReferences = (
+				A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = A5A10CB629D7FAB500E45FC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -251,9 +361,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5642FC429E7DD0E00C93F9C /* Pretendard-Thin.ttf in Resources */,
 				A5FD469E29DF09EA003AC96E /* Practice.storyboard in Resources */,
+				A5642FB629E7DCD300C93F9C /* Pretendard-Bold.ttf in Resources */,
+				A5642FC029E7DCFF00C93F9C /* Pretendard-Regular.ttf in Resources */,
 				A5A10CC529D7FAB700E45FC8 /* LaunchScreen.storyboard in Resources */,
+				A5642FB829E7DCDC00C93F9C /* Pretendard-ExtraBold.ttf in Resources */,
+				A5642FC229E7DD0700C93F9C /* Pretendard-SemiBold.ttf in Resources */,
+				A5642FBA29E7DCE600C93F9C /* Pretendard-ExtraLight.ttf in Resources */,
 				A5A10CC229D7FAB700E45FC8 /* Assets.xcassets in Resources */,
+				A5642FBC29E7DCF000C93F9C /* Pretendard-Light.ttf in Resources */,
+				A5642FB429E7DCCB00C93F9C /* Pretendard-Black.ttf in Resources */,
+				A5642FBE29E7DCF700C93F9C /* Pretendard-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +397,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */,
+				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
 				A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */,
+				A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */,
 				A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */,
+				A5642FCA29E9D99A00C93F9C /* UILabel.swift in Sources */,
+				A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */,
 				A5FD46A029DF0ABC003AC96E /* TranslatesAutoresizeingPracticeVC.swift in Sources */,
+				A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */,
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
+				A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */,
+				A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */,
+				A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */,
+				A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */,
+				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,
+				A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
+				A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */,
 				A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */,
 				A5FD469C29DE9806003AC96E /* AccessControl.swift in Sources */,
 			);
@@ -616,6 +748,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A56D904A29E141B0009FD0B2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A56D904D29E1422B009FD0B2 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5A10CAD29D7FAB500E45FC8 /* Project object */;
 }
