@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
 		A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCPractiveViewController.swift; sourceTree = "<group>"; };
+		A52573F229F2C429004FBAC0 /* CaptureList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CaptureList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopt_changhwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A52573EF29EE6371004FBAC0 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */,
+				A52573F229F2C429004FBAC0 /* CaptureList.playground */,
+			);
+			name = ARC;
+			sourceTree = "<group>";
+		};
 		A55F5C6F29D806EA00DC3F88 /* FirstSeminar */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */ = {
 			isa = PBXGroup;
 			children = (
+				A52573EF29EE6371004FBAC0 /* ARC */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
 				A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */,
 				A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */,
@@ -283,6 +296,7 @@
 				A5FD46A029DF0ABC003AC96E /* TranslatesAutoresizeingPracticeVC.swift in Sources */,
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
+				A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */,
 				A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */,
 				A5FD469C29DE9806003AC96E /* AccessControl.swift in Sources */,
 			);
