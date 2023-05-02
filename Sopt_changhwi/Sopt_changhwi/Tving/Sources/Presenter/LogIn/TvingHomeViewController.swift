@@ -54,10 +54,10 @@ class TvingHomeViewController : UIViewController {
         mainButton.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
     }
     @objc func mainButtonTapped() {
-        let mainViewController = MainViewController()
-        mainViewController.modalTransitionStyle = .crossDissolve
-        mainViewController.modalPresentationStyle = .fullScreen
-        present(mainViewController, animated: true)
+        let tabBarController = TabBarController()
+        tabBarController.modalTransitionStyle = .crossDissolve
+        tabBarController.modalPresentationStyle = .fullScreen
+        present(tabBarController, animated: true)
     }
 
 }
