@@ -11,6 +11,7 @@
 		A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */; };
 		A54C48672A0130E5004CEE3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C48662A0130E5004CEE3D /* MainViewController.swift */; };
 		A54C486E2A013492004CEE3D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C486D2A013492004CEE3D /* BaseViewController.swift */; };
+		A54C48712A013783004CEE3D /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C48702A013783004CEE3D /* UserDefaultManager.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
 		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
@@ -74,6 +75,7 @@
 		A54C485A29FE89B9004CEE3D /* OptionalPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A54C48662A0130E5004CEE3D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A54C486D2A013492004CEE3D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A54C48702A013783004CEE3D /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		A54C486B2A013323004CEE3D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A54C486F2A01376B004CEE3D /* Manager */,
 				A54C486C2A013486004CEE3D /* Base */,
 			);
 			path = Classes;
@@ -226,6 +229,14 @@
 				A54C486D2A013492004CEE3D /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		A54C486F2A01376B004CEE3D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A54C48702A013783004CEE3D /* UserDefaultManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		A55F5C6F29D806EA00DC3F88 /* FirstSeminar */ = {
@@ -510,6 +521,7 @@
 				A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */,
 				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,
 				A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */,
+				A54C48712A013783004CEE3D /* UserDefaultManager.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
 				A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */,
 				A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */,
