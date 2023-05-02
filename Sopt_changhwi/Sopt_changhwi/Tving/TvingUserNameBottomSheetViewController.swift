@@ -9,8 +9,9 @@ import UIKit
 
 class TvingUserNameBottomSheetViewController : UIViewController {
     ///dismiss시 넘겨줄 데이터 클로저
-    var backgroundHiddenCompletionHandler : ((Bool) -> (Void))?
-    var nickNameCompletionHandler : ((String) -> (Void))?
+    typealias completionHandler<T> = ((T) -> (Void))
+    var backgroundHiddenCompletionHandler : completionHandler<Bool>?
+    var nickNameCompletionHandler : completionHandler<String>?
     
     // MARK: - PROPERTIES
     private let bottomSheetView = UIView().then {

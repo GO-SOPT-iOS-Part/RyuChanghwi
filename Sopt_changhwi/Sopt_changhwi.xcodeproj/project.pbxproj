@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */; };
 		A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */; };
+		A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
 		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
@@ -65,9 +65,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingUserNameBottomSheetViewController.swift; sourceTree = "<group>"; };
 		A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCPractiveViewController.swift; sourceTree = "<group>"; };
 		A52573F229F2C429004FBAC0 /* CaptureList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CaptureList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingUserNameBottomSheetViewController.swift; sourceTree = "<group>"; };
+		A54C485729FE40DC004CEE3D /* TypeAliasPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TypeAliasPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A54C485A29FE89B9004CEE3D /* OptionalPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,23 @@
 				A52573F229F2C429004FBAC0 /* CaptureList.playground */,
 			);
 			name = ARC;
+			sourceTree = "<group>";
+		};
+		A54C485329FE38C0004CEE3D /* SwiftGrammar */ = {
+			isa = PBXGroup;
+			children = (
+				A54C485429FE38D5004CEE3D /* First */,
+			);
+			path = SwiftGrammar;
+			sourceTree = "<group>";
+		};
+		A54C485429FE38D5004CEE3D /* First */ = {
+			isa = PBXGroup;
+			children = (
+				A54C485729FE40DC004CEE3D /* TypeAliasPractice.playground */,
+				A54C485A29FE89B9004CEE3D /* OptionalPractice.playground */,
+			);
+			path = First;
 			sourceTree = "<group>";
 		};
 		A55F5C6F29D806EA00DC3F88 /* FirstSeminar */ = {
@@ -229,14 +248,12 @@
 		A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */ = {
 			isa = PBXGroup;
 			children = (
-
+				A54C485329FE38C0004CEE3D /* SwiftGrammar */,
 				A52573EF29EE6371004FBAC0 /* ARC */,
-
 				A5642FB029E7DA5B00C93F9C /* Fonts */,
 				A5642FAD29E7D70300C93F9C /* Extensions */,
 				A5642FA929E7D08800C93F9C /* Tving */,
 				A56D904429E1333D009FD0B2 /* SecondSemianr */,
-
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
 				A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */,
 				A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */,
@@ -430,11 +447,8 @@
 				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,
 				A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
-
 				A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */,
-
 				A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */,
-
 				A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */,
 				A5FD469C29DE9806003AC96E /* AccessControl.swift in Sources */,
 			);
