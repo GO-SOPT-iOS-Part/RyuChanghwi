@@ -146,14 +146,8 @@ class TvingLoginViewController : UIViewController {
     @objc func passwordTextSecureToggleButtonTapped(_ sender : UIButton) {
         ///비밀번호 secure 토글
         sender.isSelected = !sender.isSelected
-        if sender.isSelected {
-            passwordTextSecureToggleButton.setImage(UIImage(systemName: "eye"), for: .normal)
-            passwordTextField.isSecureTextEntry = false
-        }
-        else {
-            passwordTextSecureToggleButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
-            passwordTextField.isSecureTextEntry = true
-        }
+        passwordTextSecureToggleButton.setImage(sender.isSelected ? UIImage(systemName: "eye") : UIImage(systemName: "eye.slash") , for: .normal)
+        passwordTextField.isSecureTextEntry = !sender.isSelected
     }
     @objc func createAccountButtonTapped() {
         let tvingUserNameBottomSheetViewController = TvingUserNameBottomSheetViewController()
