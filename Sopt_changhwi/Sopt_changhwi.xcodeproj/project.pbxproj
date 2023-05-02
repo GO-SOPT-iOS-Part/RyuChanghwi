@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */; };
 		A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52573F029EE6385004FBAC0 /* ARCPractiveViewController.swift */; };
+		A54C48672A0130E5004CEE3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C48662A0130E5004CEE3D /* MainViewController.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
 		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
@@ -70,6 +71,7 @@
 		A52573F229F2C429004FBAC0 /* CaptureList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CaptureList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A54C485729FE40DC004CEE3D /* TypeAliasPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TypeAliasPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A54C485A29FE89B9004CEE3D /* OptionalPractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalPractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A54C48662A0130E5004CEE3D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,58 @@
 			path = First;
 			sourceTree = "<group>";
 		};
+		A54C48642A0130C2004CEE3D /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */,
+				A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */,
+				A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		A54C48652A0130D2004CEE3D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A54C48662A0130E5004CEE3D /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A54C48682A013233004CEE3D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A54C48642A0130C2004CEE3D /* LogIn */,
+				A54C48652A0130D2004CEE3D /* Main */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A54C48692A013253004CEE3D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A54C48682A013233004CEE3D /* Presenter */,
+				A54C486A2A0132B2004CEE3D /* Model */,
+				A54C486B2A013323004CEE3D /* Classes */,
+				A5642FAD29E7D70300C93F9C /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A54C486A2A0132B2004CEE3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A54C486B2A013323004CEE3D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		A55F5C6F29D806EA00DC3F88 /* FirstSeminar */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +231,7 @@
 		A5642FA929E7D08800C93F9C /* Tving */ = {
 			isa = PBXGroup;
 			children = (
-				A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */,
-				A5642FC529E9B84400C93F9C /* TvingHomeViewController.swift */,
-				A52573E729EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift */,
+				A54C48692A013253004CEE3D /* Sources */,
 			);
 			path = Tving;
 			sourceTree = "<group>";
@@ -248,11 +300,10 @@
 		A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */ = {
 			isa = PBXGroup;
 			children = (
+				A5642FA929E7D08800C93F9C /* Tving */,
+				A5642FB029E7DA5B00C93F9C /* Fonts */,
 				A54C485329FE38C0004CEE3D /* SwiftGrammar */,
 				A52573EF29EE6371004FBAC0 /* ARC */,
-				A5642FB029E7DA5B00C93F9C /* Fonts */,
-				A5642FAD29E7D70300C93F9C /* Extensions */,
-				A5642FA929E7D08800C93F9C /* Tving */,
 				A56D904429E1333D009FD0B2 /* SecondSemianr */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
 				A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */,
@@ -431,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */,
+				A54C48672A0130E5004CEE3D /* MainViewController.swift in Sources */,
 				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
 				A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */,
 				A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */,
