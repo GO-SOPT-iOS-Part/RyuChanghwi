@@ -33,7 +33,6 @@ class BaseViewController: UIViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setStyle()
         setLayout()
         actions()
@@ -49,7 +48,6 @@ class BaseViewController: UIViewController {
     
     /// Attributes (속성) 설정 메서드
     func setStyle() {
-        
         view.backgroundColor = .color000000
     }
     

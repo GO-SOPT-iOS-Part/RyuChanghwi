@@ -17,6 +17,9 @@
 		A54C48782A0147D1004CEE3D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C48772A0147D1004CEE3D /* MyPageViewController.swift */; };
 		A54C487B2A0167D5004CEE3D /* MyPageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C487A2A0167D5004CEE3D /* MyPageHeaderView.swift */; };
 		A54C487D2A01680E004CEE3D /* BaseUIVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C487C2A01680E004CEE3D /* BaseUIVIew.swift */; };
+		A5544E062A024368004A889F /* MyPageButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5544E052A024368004A889F /* MyPageButtonCell.swift */; };
+		A5544E082A0246D7004A889F /* MyPageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5544E072A0246D7004A889F /* MyPageButton.swift */; };
+		A5544E0A2A026E73004A889F /* MyPageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5544E092A026E73004A889F /* MyPageFooterView.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
 		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
@@ -42,6 +45,13 @@
 		A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */; };
 		A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */; };
 		A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */; };
+		A57FCCB92A04C73300576812 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCB82A04C73300576812 /* UIView.swift */; };
+		A57FCCBB2A04CB2F00576812 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCBA2A04CB2F00576812 /* UIStackView.swift */; };
+		A57FCCBE2A04EC1800576812 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCBD2A04EC1800576812 /* HomePageViewController.swift */; };
+		A57FCCC02A04EC2400576812 /* RealTimePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCBF2A04EC2400576812 /* RealTimePageViewController.swift */; };
+		A57FCCC22A04EC3300576812 /* TvProgramPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCC12A04EC3300576812 /* TvProgramPageController.swift */; };
+		A57FCCC42A04EC3E00576812 /* MoviePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCC32A04EC3E00576812 /* MoviePageViewController.swift */; };
+		A57FCCC62A04EC4D00576812 /* ParamountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCC52A04EC4D00576812 /* ParamountPageViewController.swift */; };
 		A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */; };
 		A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */; };
 		A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A10CBC29D7FAB500E45FC8 /* ViewController.swift */; };
@@ -86,6 +96,10 @@
 		A54C48772A0147D1004CEE3D /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		A54C487A2A0167D5004CEE3D /* MyPageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageHeaderView.swift; sourceTree = "<group>"; };
 		A54C487C2A01680E004CEE3D /* BaseUIVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIVIew.swift; sourceTree = "<group>"; };
+		A5544E052A024368004A889F /* MyPageButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageButtonCell.swift; sourceTree = "<group>"; };
+		A5544E072A0246D7004A889F /* MyPageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageButton.swift; sourceTree = "<group>"; };
+		A5544E092A026E73004A889F /* MyPageFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageFooterView.swift; sourceTree = "<group>"; };
+		A5544E0C2A03BD97004A889F /* OverridePractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OverridePractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +123,13 @@
 		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
 		A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureSecondViewController.swift; sourceTree = "<group>"; };
 		A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
+		A57FCCB82A04C73300576812 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		A57FCCBA2A04CB2F00576812 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		A57FCCBD2A04EC1800576812 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		A57FCCBF2A04EC2400576812 /* RealTimePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimePageViewController.swift; sourceTree = "<group>"; };
+		A57FCCC12A04EC3300576812 /* TvProgramPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvProgramPageController.swift; sourceTree = "<group>"; };
+		A57FCCC32A04EC3E00576812 /* MoviePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePageViewController.swift; sourceTree = "<group>"; };
+		A57FCCC52A04EC4D00576812 /* ParamountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamountPageViewController.swift; sourceTree = "<group>"; };
 		A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sopt_changhwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A10CBA29D7FAB500E45FC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +213,7 @@
 		A54C48652A0130D2004CEE3D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A57FCCBC2A04EBF300576812 /* CategoryPageViewController */,
 				A54C48792A0167C1004CEE3D /* MyPageView */,
 				A54C48662A0130E5004CEE3D /* MainViewController.swift */,
 				A54C48772A0147D1004CEE3D /* MyPageViewController.swift */,
@@ -222,6 +244,7 @@
 		A54C486A2A0132B2004CEE3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5544E072A0246D7004A889F /* MyPageButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,8 +288,18 @@
 			isa = PBXGroup;
 			children = (
 				A54C487A2A0167D5004CEE3D /* MyPageHeaderView.swift */,
+				A5544E052A024368004A889F /* MyPageButtonCell.swift */,
+				A5544E092A026E73004A889F /* MyPageFooterView.swift */,
 			);
 			path = MyPageView;
+			sourceTree = "<group>";
+		};
+		A5544E0B2A03BD7A004A889F /* OverridePractice */ = {
+			isa = PBXGroup;
+			children = (
+				A5544E0C2A03BD97004A889F /* OverridePractice.playground */,
+			);
+			path = OverridePractice;
 			sourceTree = "<group>";
 		};
 		A55F5C6F29D806EA00DC3F88 /* FirstSeminar */ = {
@@ -297,6 +330,8 @@
 				A5642FC929E9D99A00C93F9C /* UILabel.swift */,
 				A5642FCB29EA5F7000C93F9C /* UITextField.swift */,
 				A54C48752A0141FE004CEE3D /* UIImage.swift */,
+				A57FCCB82A04C73300576812 /* UIView.swift */,
+				A57FCCBA2A04CB2F00576812 /* UIStackView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -329,6 +364,18 @@
 			path = SecondSemianr;
 			sourceTree = "<group>";
 		};
+		A57FCCBC2A04EBF300576812 /* CategoryPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A57FCCBD2A04EC1800576812 /* HomePageViewController.swift */,
+				A57FCCBF2A04EC2400576812 /* RealTimePageViewController.swift */,
+				A57FCCC12A04EC3300576812 /* TvProgramPageController.swift */,
+				A57FCCC32A04EC3E00576812 /* MoviePageViewController.swift */,
+				A57FCCC52A04EC4D00576812 /* ParamountPageViewController.swift */,
+			);
+			path = CategoryPageViewController;
+			sourceTree = "<group>";
+		};
 		A5A10CAC29D7FAB500E45FC8 = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +404,7 @@
 				A5642FB029E7DA5B00C93F9C /* Fonts */,
 				A54C485329FE38C0004CEE3D /* SwiftGrammar */,
 				A52573EF29EE6371004FBAC0 /* ARC */,
+				A5544E0B2A03BD7A004A889F /* OverridePractice */,
 				A56D904429E1333D009FD0B2 /* SecondSemianr */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
 				A5A10CB829D7FAB500E45FC8 /* AppDelegate.swift */,
@@ -542,26 +590,36 @@
 				A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */,
 				A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */,
 				A5642FCA29E9D99A00C93F9C /* UILabel.swift in Sources */,
+				A57FCCC42A04EC3E00576812 /* MoviePageViewController.swift in Sources */,
+				A57FCCBE2A04EC1800576812 /* HomePageViewController.swift in Sources */,
 				A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */,
 				A5FD46A029DF0ABC003AC96E /* TranslatesAutoresizeingPracticeVC.swift in Sources */,
 				A54C48782A0147D1004CEE3D /* MyPageViewController.swift in Sources */,
+				A57FCCC02A04EC2400576812 /* RealTimePageViewController.swift in Sources */,
 				A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */,
 				A54C48762A0141FE004CEE3D /* UIImage.swift in Sources */,
+				A57FCCB92A04C73300576812 /* UIView.swift in Sources */,
 				A54C487D2A01680E004CEE3D /* BaseUIVIew.swift in Sources */,
+				A57FCCC62A04EC4D00576812 /* ParamountPageViewController.swift in Sources */,
+				A5544E062A024368004A889F /* MyPageButtonCell.swift in Sources */,
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
 				A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */,
 				A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */,
+				A57FCCBB2A04CB2F00576812 /* UIStackView.swift in Sources */,
 				A54C487B2A0167D5004CEE3D /* MyPageHeaderView.swift in Sources */,
 				A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */,
 				A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */,
 				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,
+				A5544E082A0246D7004A889F /* MyPageButton.swift in Sources */,
 				A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */,
+				A57FCCC22A04EC3300576812 /* TvProgramPageController.swift in Sources */,
 				A54C48742A013A0B004CEE3D /* TabBarController.swift in Sources */,
 				A54C48712A013783004CEE3D /* UserDefaultManager.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
 				A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */,
 				A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */,
 				A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */,
+				A5544E0A2A026E73004A889F /* MyPageFooterView.swift in Sources */,
 				A5FD469C29DE9806003AC96E /* AccessControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

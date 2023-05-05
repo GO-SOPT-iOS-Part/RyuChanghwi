@@ -21,16 +21,13 @@ class TabBarController : UITabBarController {
         ///탭바가 반투명 상태 bool
         tabBar.isTranslucent = false
         tabBar.barTintColor = .color000000
-        
-
-        
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
         
         appearance.backgroundColor = .color000000
         tabBar.standardAppearance = appearance
         tabBar.scrollEdgeAppearance = appearance
-        tabBar.unselectedItemTintColor = .lightGray
+//        tabBar.unselectedItemTintColor = .lightGray
         tabBar.tintColor = .colorFFFFFF
         
         UITabBar.appearance().standardAppearance = appearance
