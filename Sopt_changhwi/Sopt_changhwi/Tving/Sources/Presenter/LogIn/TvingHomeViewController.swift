@@ -24,7 +24,7 @@ class TvingHomeViewController : UIViewController {
         $0.textAlignment = .center
     }
     
-    private let backButton = UIButton().then {
+    private let mainButton = UIButton().then {
         $0.setTitle("메인으로", for: .normal)
         $0.setTitleColor(UIColor.colorFFFFFF, for: .normal)
         $0.titleLabel?.font = UIFont.pretendard(.semiBold, size: 14)
@@ -51,10 +51,13 @@ class TvingHomeViewController : UIViewController {
     
     // MARK: - ACTIONS
     private func actions() {
-        backButton.addTarget(self, action: #selector(backButtonTapped), for: .touchUpInside)
+        mainButton.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
     }
-    @objc func backButtonTapped() {
-        dismiss(animated: true)
+    @objc func mainButtonTapped() {
+        let tabBarController = TabBarController()
+        tabBarController.modalTransitionStyle = .crossDissolve
+        tabBarController.modalPresentationStyle = .fullScreen
+        present(tabBarController, animated: true)
     }
 
 }
@@ -64,7 +67,7 @@ extension TvingHomeViewController {
         view.backgroundColor = UIColor.color000000
     }
     func setLayout() {
-        [tvingImageView, greetingLabel, backButton].forEach {
+        [tvingImageView, greetingLabel, mainButton].forEach {
             view.addSubview($0)
         }
         tvingImageView.snp.makeConstraints {
@@ -76,7 +79,7 @@ extension TvingHomeViewController {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(tvingImageView.snp.bottom).offset(66)
         }
-        backButton.snp.makeConstraints {
+        mainButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.leading.equalToSuperview().offset(20)
             $0.bottom.equalToSuperview().offset(-66)
