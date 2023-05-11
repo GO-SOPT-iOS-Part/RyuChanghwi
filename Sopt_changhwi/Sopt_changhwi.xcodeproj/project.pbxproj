@@ -45,6 +45,15 @@
 		A56D905029E146F5009FD0B2 /* SecondSeminarClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */; };
 		A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */; };
 		A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */; };
+		A57FCCC82A0624B100576812 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCC72A0624B100576812 /* Config.swift */; };
+		A57FCCCA2A0624D300576812 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCC92A0624D300576812 /* NetworkResult.swift */; };
+		A57FCCCE2A06288A00576812 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A57FCCCD2A06288A00576812 /* Alamofire */; };
+		A57FCCD02A0629CF00576812 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCCF2A0629CF00576812 /* SignUpService.swift */; };
+		A57FCCD22A062C3200576812 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCD12A062C3200576812 /* SignUpResponse.swift */; };
+		A57FCCD42A062C6F00576812 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCD32A062C6F00576812 /* FourthViewController.swift */; };
+		A57FCCD72A0638CE00576812 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCD62A0638CE00576812 /* WeatherService.swift */; };
+		A57FCCD92A0638D600576812 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCD82A0638D600576812 /* WeatherResponse.swift */; };
+		A57FCCDB2A063ACF00576812 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCDA2A063ACF00576812 /* WeatherViewController.swift */; };
 		A57FCCB92A04C73300576812 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCB82A04C73300576812 /* UIView.swift */; };
 		A57FCCBB2A04CB2F00576812 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCBA2A04CB2F00576812 /* UIStackView.swift */; };
 		A57FCCBE2A04EC1800576812 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FCCBD2A04EC1800576812 /* HomePageViewController.swift */; };
@@ -123,6 +132,14 @@
 		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
 		A56D905129E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureSecondViewController.swift; sourceTree = "<group>"; };
 		A56D905329E153D3009FD0B2 /* ZigZagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagViewController.swift; sourceTree = "<group>"; };
+		A57FCCC72A0624B100576812 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A57FCCC92A0624D300576812 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		A57FCCCF2A0629CF00576812 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
+		A57FCCD12A062C3200576812 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		A57FCCD32A062C6F00576812 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		A57FCCD62A0638CE00576812 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		A57FCCD82A0638D600576812 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		A57FCCDA2A063ACF00576812 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		A57FCCB82A04C73300576812 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A57FCCBA2A04CB2F00576812 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		A57FCCBD2A04EC1800576812 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57FCCCE2A06288A00576812 /* Alamofire in Frameworks */,
 				A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */,
 				A56D904E29E1422B009FD0B2 /* Then in Frameworks */,
 			);
@@ -364,6 +382,26 @@
 			path = SecondSemianr;
 			sourceTree = "<group>";
 		};
+		A57FCCCB2A06254300576812 /* FourthSeminar */ = {
+			isa = PBXGroup;
+			children = (
+				A57FCCC92A0624D300576812 /* NetworkResult.swift */,
+				A57FCCC72A0624B100576812 /* Config.swift */,
+				A57FCCCF2A0629CF00576812 /* SignUpService.swift */,
+				A57FCCD12A062C3200576812 /* SignUpResponse.swift */,
+				A57FCCD32A062C6F00576812 /* FourthViewController.swift */,
+			);
+			path = FourthSeminar;
+			sourceTree = "<group>";
+		};
+		A57FCCD52A0638A700576812 /* WeahterAPIPractice */ = {
+			isa = PBXGroup;
+			children = (
+				A57FCCD62A0638CE00576812 /* WeatherService.swift */,
+				A57FCCD82A0638D600576812 /* WeatherResponse.swift */,
+				A57FCCDA2A063ACF00576812 /* WeatherViewController.swift */,
+			);
+			path = WeahterAPIPractice;
 		A57FCCBC2A04EBF300576812 /* CategoryPageViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +417,7 @@
 		A5A10CAC29D7FAB500E45FC8 = {
 			isa = PBXGroup;
 			children = (
+				A57FCCD52A0638A700576812 /* WeahterAPIPractice */,
 				A5FD469D29DF09EA003AC96E /* Practice.storyboard */,
 				A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */,
 				A5A10CCE29D7FAB700E45FC8 /* Sopt_changhwiTests */,
@@ -404,6 +443,10 @@
 				A5642FB029E7DA5B00C93F9C /* Fonts */,
 				A54C485329FE38C0004CEE3D /* SwiftGrammar */,
 				A52573EF29EE6371004FBAC0 /* ARC */,
+				A5642FB029E7DA5B00C93F9C /* Fonts */,
+				A5642FAD29E7D70300C93F9C /* Extensions */,
+				A5642FA929E7D08800C93F9C /* Tving */,
+				A57FCCCB2A06254300576812 /* FourthSeminar */,
 				A5544E0B2A03BD7A004A889F /* OverridePractice */,
 				A56D904429E1333D009FD0B2 /* SecondSemianr */,
 				A55F5C6F29D806EA00DC3F88 /* FirstSeminar */,
@@ -453,6 +496,7 @@
 			packageProductDependencies = (
 				A56D904A29E141B0009FD0B2 /* SnapKit */,
 				A56D904D29E1422B009FD0B2 /* Then */,
+				A57FCCCD2A06288A00576812 /* Alamofire */,
 			);
 			productName = Sopt_changhwi;
 			productReference = A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */;
@@ -529,6 +573,7 @@
 			packageReferences = (
 				A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */,
+				A57FCCCC2A06288A00576812 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = A5A10CB629D7FAB500E45FC8 /* Products */;
 			projectDirPath = "";
@@ -583,6 +628,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */,
+				A57FCCD72A0638CE00576812 /* WeatherService.swift in Sources */,
+				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
+				A57FCCDB2A063ACF00576812 /* WeatherViewController.swift in Sources */,
+				A57FCCD92A0638D600576812 /* WeatherResponse.swift in Sources */,
 				A54C48672A0130E5004CEE3D /* MainViewController.swift in Sources */,
 				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
 				A54C486E2A013492004CEE3D /* BaseViewController.swift in Sources */,
@@ -594,6 +643,7 @@
 				A57FCCBE2A04EC1800576812 /* HomePageViewController.swift in Sources */,
 				A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */,
 				A5FD46A029DF0ABC003AC96E /* TranslatesAutoresizeingPracticeVC.swift in Sources */,
+				A57FCCCA2A0624D300576812 /* NetworkResult.swift in Sources */,
 				A54C48782A0147D1004CEE3D /* MyPageViewController.swift in Sources */,
 				A57FCCC02A04EC2400576812 /* RealTimePageViewController.swift in Sources */,
 				A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */,
@@ -605,6 +655,13 @@
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
 				A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */,
 				A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */,
+				A57FCCD22A062C3200576812 /* SignUpResponse.swift in Sources */,
+				A57FCCD02A0629CF00576812 /* SignUpService.swift in Sources */,
+				A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */,
+				A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */,
+				A56D905229E14708009FD0B2 /* SecondSeminarClosureSecondViewController.swift in Sources */,
+				A57FCCD42A062C6F00576812 /* FourthViewController.swift in Sources */,
+				A57FCCC82A0624B100576812 /* Config.swift in Sources */,
 				A57FCCBB2A04CB2F00576812 /* UIStackView.swift in Sources */,
 				A54C487B2A0167D5004CEE3D /* MyPageHeaderView.swift in Sources */,
 				A5642FC629E9B84400C93F9C /* TvingHomeViewController.swift in Sources */,
@@ -787,6 +844,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://54.180.123.11";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JB8T59WMFR;
@@ -814,6 +872,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "http://54.180.123.11";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JB8T59WMFR;
@@ -970,6 +1029,14 @@
 				kind = branch;
 			};
 		};
+		A57FCCCC2A06288A00576812 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -982,6 +1049,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		A57FCCCD2A06288A00576812 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A57FCCCC2A06288A00576812 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
