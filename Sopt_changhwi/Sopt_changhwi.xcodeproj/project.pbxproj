@@ -22,6 +22,9 @@
 		A5544E0A2A026E73004A889F /* MyPageFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5544E092A026E73004A889F /* MyPageFooterView.swift */; };
 		A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */; };
 		A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */; };
+		A5632CCE2A0D4906007EC335 /* CampingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5632CCD2A0D4906007EC335 /* CampingListCell.swift */; };
+		A5632CD02A0D4917007EC335 /* CampingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5632CCF2A0D4917007EC335 /* CampingDetailViewController.swift */; };
+		A5632CD62A0D51FC007EC335 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A5632CD52A0D51FC007EC335 /* Kingfisher */; };
 		A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */; };
 		A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FAE29E7D76600C93F9C /* UIColor.swift */; };
 		A5642FB229E7DA9100C93F9C /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FB129E7DA9100C93F9C /* UIFont.swift */; };
@@ -38,6 +41,11 @@
 		A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC729E9D50E00C93F9C /* UIButton.swift */; };
 		A5642FCA29E9D99A00C93F9C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FC929E9D99A00C93F9C /* UILabel.swift */; };
 		A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5642FCB29EA5F7000C93F9C /* UITextField.swift */; };
+		A56BFF1E2A0D26990009E474 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A56BFF1D2A0D26990009E474 /* Alamofire */; };
+		A56BFF212A0D2AC50009E474 /* CampingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BFF202A0D2AC50009E474 /* CampingMainViewController.swift */; };
+		A56BFF232A0D2EFF0009E474 /* CampingResposne.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BFF222A0D2EFF0009E474 /* CampingResposne.swift */; };
+		A56BFF252A0D334D0009E474 /* SearchCampingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BFF242A0D334D0009E474 /* SearchCampingService.swift */; };
+		A56BFF272A0D37EE0009E474 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BFF262A0D37EE0009E474 /* NetworkResult.swift */; };
 		A56D904629E133E3009FD0B2 /* SecondSeminarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */; };
 		A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */; };
 		A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A56D904A29E141B0009FD0B2 /* SnapKit */; };
@@ -102,6 +110,8 @@
 		A5544E0C2A03BD97004A889F /* OverridePractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OverridePractice.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A55F5C7029D8070A00DC3F88 /* FirstSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarViewController.swift; sourceTree = "<group>"; };
 		A55F5C7229D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSeminarSecondViewController.swift; sourceTree = "<group>"; };
+		A5632CCD2A0D4906007EC335 /* CampingListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingListCell.swift; sourceTree = "<group>"; };
+		A5632CCF2A0D4917007EC335 /* CampingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingDetailViewController.swift; sourceTree = "<group>"; };
 		A5642FAB29E7D57800C93F9C /* TvingLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvingLoginViewController.swift; sourceTree = "<group>"; };
 		A5642FAE29E7D76600C93F9C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A5642FB129E7DA9100C93F9C /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
@@ -118,6 +128,10 @@
 		A5642FC729E9D50E00C93F9C /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		A5642FC929E9D99A00C93F9C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		A5642FCB29EA5F7000C93F9C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		A56BFF202A0D2AC50009E474 /* CampingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingMainViewController.swift; sourceTree = "<group>"; };
+		A56BFF222A0D2EFF0009E474 /* CampingResposne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingResposne.swift; sourceTree = "<group>"; };
+		A56BFF242A0D334D0009E474 /* SearchCampingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCampingService.swift; sourceTree = "<group>"; };
+		A56BFF262A0D37EE0009E474 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		A56D904529E133E3009FD0B2 /* SecondSeminarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarViewController.swift; sourceTree = "<group>"; };
 		A56D904729E13436009FD0B2 /* SecondSeminarSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarSecondViewController.swift; sourceTree = "<group>"; };
 		A56D904F29E146F5009FD0B2 /* SecondSeminarClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSeminarClosureViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +166,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5632CD62A0D51FC007EC335 /* Kingfisher in Frameworks */,
+				A56BFF1E2A0D26990009E474 /* Alamofire in Frameworks */,
 				A56D904B29E141B0009FD0B2 /* SnapKit in Frameworks */,
 				A56D904E29E1422B009FD0B2 /* Then in Frameworks */,
 			);
@@ -352,6 +368,19 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A56BFF1F2A0D2A690009E474 /* FourthSeminar */ = {
+			isa = PBXGroup;
+			children = (
+				A56BFF202A0D2AC50009E474 /* CampingMainViewController.swift */,
+				A56BFF222A0D2EFF0009E474 /* CampingResposne.swift */,
+				A56BFF242A0D334D0009E474 /* SearchCampingService.swift */,
+				A56BFF262A0D37EE0009E474 /* NetworkResult.swift */,
+				A5632CCD2A0D4906007EC335 /* CampingListCell.swift */,
+				A5632CCF2A0D4917007EC335 /* CampingDetailViewController.swift */,
+			);
+			path = FourthSeminar;
+			sourceTree = "<group>";
+		};
 		A56D904429E1333D009FD0B2 /* SecondSemianr */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +429,7 @@
 		A5A10CB729D7FAB500E45FC8 /* Sopt_changhwi */ = {
 			isa = PBXGroup;
 			children = (
+				A56BFF1F2A0D2A690009E474 /* FourthSeminar */,
 				A5642FA929E7D08800C93F9C /* Tving */,
 				A5642FB029E7DA5B00C93F9C /* Fonts */,
 				A54C485329FE38C0004CEE3D /* SwiftGrammar */,
@@ -453,6 +483,8 @@
 			packageProductDependencies = (
 				A56D904A29E141B0009FD0B2 /* SnapKit */,
 				A56D904D29E1422B009FD0B2 /* Then */,
+				A56BFF1D2A0D26990009E474 /* Alamofire */,
+				A5632CD52A0D51FC007EC335 /* Kingfisher */,
 			);
 			productName = Sopt_changhwi;
 			productReference = A5A10CB529D7FAB500E45FC8 /* Sopt_changhwi.app */;
@@ -529,6 +561,8 @@
 			packageReferences = (
 				A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A56D904C29E1422B009FD0B2 /* XCRemoteSwiftPackageReference "Then" */,
+				A56BFF1C2A0D26990009E474 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A5632CD42A0D51FC007EC335 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A5A10CB629D7FAB500E45FC8 /* Products */;
 			projectDirPath = "";
@@ -582,12 +616,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56BFF272A0D37EE0009E474 /* NetworkResult.swift in Sources */,
 				A52573E829EAFCEF004FBAC0 /* TvingUserNameBottomSheetViewController.swift in Sources */,
 				A54C48672A0130E5004CEE3D /* MainViewController.swift in Sources */,
 				A5642FC829E9D50E00C93F9C /* UIButton.swift in Sources */,
 				A54C486E2A013492004CEE3D /* BaseViewController.swift in Sources */,
 				A5A10CBD29D7FAB500E45FC8 /* ViewController.swift in Sources */,
 				A5642FAF29E7D76600C93F9C /* UIColor.swift in Sources */,
+				A5632CCE2A0D4906007EC335 /* CampingListCell.swift in Sources */,
 				A55F5C7329D80FFB00DC3F88 /* FirstSeminarSecondViewController.swift in Sources */,
 				A5642FCA29E9D99A00C93F9C /* UILabel.swift in Sources */,
 				A57FCCC42A04EC3E00576812 /* MoviePageViewController.swift in Sources */,
@@ -599,11 +635,13 @@
 				A56D905429E153D3009FD0B2 /* ZigZagViewController.swift in Sources */,
 				A54C48762A0141FE004CEE3D /* UIImage.swift in Sources */,
 				A57FCCB92A04C73300576812 /* UIView.swift in Sources */,
+				A56BFF252A0D334D0009E474 /* SearchCampingService.swift in Sources */,
 				A54C487D2A01680E004CEE3D /* BaseUIVIew.swift in Sources */,
 				A57FCCC62A04EC4D00576812 /* ParamountPageViewController.swift in Sources */,
 				A5544E062A024368004A889F /* MyPageButtonCell.swift in Sources */,
 				A5A10CB929D7FAB500E45FC8 /* AppDelegate.swift in Sources */,
 				A56D904829E13436009FD0B2 /* SecondSeminarSecondViewController.swift in Sources */,
+				A56BFF232A0D2EFF0009E474 /* CampingResposne.swift in Sources */,
 				A5642FCC29EA5F7000C93F9C /* UITextField.swift in Sources */,
 				A57FCCBB2A04CB2F00576812 /* UIStackView.swift in Sources */,
 				A54C487B2A0167D5004CEE3D /* MyPageHeaderView.swift in Sources */,
@@ -615,11 +653,13 @@
 				A57FCCC22A04EC3300576812 /* TvProgramPageController.swift in Sources */,
 				A54C48742A013A0B004CEE3D /* TabBarController.swift in Sources */,
 				A54C48712A013783004CEE3D /* UserDefaultManager.swift in Sources */,
+				A5632CD02A0D4917007EC335 /* CampingDetailViewController.swift in Sources */,
 				A55F5C7129D8070A00DC3F88 /* FirstSeminarViewController.swift in Sources */,
 				A52573F129EE6385004FBAC0 /* ARCPractiveViewController.swift in Sources */,
 				A5642FAC29E7D57800C93F9C /* TvingLoginViewController.swift in Sources */,
 				A5A10CBB29D7FAB500E45FC8 /* SceneDelegate.swift in Sources */,
 				A5544E0A2A026E73004A889F /* MyPageFooterView.swift in Sources */,
+				A56BFF212A0D2AC50009E474 /* CampingMainViewController.swift in Sources */,
 				A5FD469C29DE9806003AC96E /* AccessControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,6 +832,7 @@
 				DEVELOPMENT_TEAM = JB8T59WMFR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sopt_changhwi/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도를 써보야요!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -819,6 +860,7 @@
 				DEVELOPMENT_TEAM = JB8T59WMFR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sopt_changhwi/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "지도를 써보야요!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -954,6 +996,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A5632CD42A0D51FC007EC335 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		A56BFF1C2A0D26990009E474 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -973,6 +1031,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A5632CD52A0D51FC007EC335 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5632CD42A0D51FC007EC335 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		A56BFF1D2A0D26990009E474 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A56BFF1C2A0D26990009E474 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		A56D904A29E141B0009FD0B2 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A56D904929E141B0009FD0B2 /* XCRemoteSwiftPackageReference "SnapKit" */;
